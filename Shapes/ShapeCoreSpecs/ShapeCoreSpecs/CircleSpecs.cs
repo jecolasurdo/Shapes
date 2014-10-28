@@ -32,15 +32,5 @@ namespace Shapes.ShapeCoreSpecs.ShapeCoreSpecs
 
             Assert.AreEqual(actualResult,expectedResult);
         }
-
-        [Test]
-        public void Circle_GivenANegativeRadius_ThrowsArgumentOutOfRangeException() {
-            Assert.Inconclusive();
-        }
-
-        [Test]
-        public void Circle_GivenAnEmptyColor_ThrowsInvalidArgumentException() {
-            Assert.Inconclusive();
-        }
     }
 }
