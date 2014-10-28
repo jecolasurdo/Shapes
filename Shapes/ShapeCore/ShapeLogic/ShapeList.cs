@@ -100,7 +100,9 @@ namespace Shapes.ShapeCore.ShapeLogic
         /// Returns a subset of this list where the shape names are equal to the specified shape name.
         /// </summary>
         public override IShapeList GetSubListOfType(string shapeName) {
-            throw new NotImplementedException();
+            var subList = new ShapeList();
+            subList.AddRange(this.Where(shape => shape.ShapeType == shapeName));
+            return subList;
         }
     }
 }
