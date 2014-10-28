@@ -15,11 +15,12 @@ namespace Shapes.ShapeCore.ShapeLogic
             get { return (decimal) Math.PI*Radius*Radius; }
         }
 
-        public override string Color { get { throw new NotImplementedException(); } }
+        public override sealed string Color { get; set; }
         public decimal Radius { get; private set; }
         
-        public Circle(decimal radius) {
+        public Circle(decimal radius, string color) {
             Radius = radius;
+            Color = color;
         }
     }
 }

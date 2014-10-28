@@ -23,6 +23,6 @@ namespace Shapes.ShapeCore.ComponentModel
 
         public abstract string ShapeType { get; }
         public abstract decimal Area { get; }
-        public abstract string Color { get; }
+        public abstract string Color { get; set; }
     }
 }

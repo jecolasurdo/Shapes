@@ -11,13 +11,14 @@ namespace Shapes.ShapeCore.ShapeLogic
     {
         public override string ShapeType { get { return "Rectangle"; } }
         public override decimal Area { get { return Length*Width; } }
-        public override string Color { get { throw new NotImplementedException(); } }
+        public override sealed string Color { get; set; }
         public decimal Length { get; private set; }
         public decimal Width { get; private set; }
 
-        public Rectangle(decimal length, decimal width) {
+        public Rectangle(decimal length, decimal width, string color) {
             Length = length;
             Width = width;
+            Color = color;
         }
     }
 }
