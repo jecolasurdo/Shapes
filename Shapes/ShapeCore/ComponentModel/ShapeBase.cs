@@ -12,8 +12,8 @@ namespace Shapes.ShapeCore.ComponentModel
             throw new NotImplementedException();
         }
 
-        public string ShapeType { get; private set; }
-        public decimal Area { get; private set; }
-        public string Color { get; private set; }
+        public abstract string ShapeType { get; }
+        public abstract decimal Area { get; }
+        public abstract string Color { get; }
     }
 }
