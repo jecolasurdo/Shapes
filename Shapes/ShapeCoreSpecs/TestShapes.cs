@@ -11,28 +11,21 @@ namespace Shapes.ShapeCoreSpecs
     {
         public override string ShapeType { get { return "triangle"; } }
         public override decimal Area { get { return (decimal)15; } }
-        public override string Color { get { return "yellow"; } }
-    }
-
-    public class Square : ShapeBase
-    {
-        public override string ShapeType { get { return "square"; } }
-        public override decimal Area { get { return (decimal)64; } }
-        public override string Color { get { return "red"; } }
-    }
-
-    public class Circle : ShapeBase
-    {
-        public override string ShapeType { get { return "circle"; } }
-        public override decimal Area { get { return (decimal)9; } }
-        public override string Color { get { return "blue"; } }
+        public override string Color { get { return "green"; } }
     }
 
     public class Triangle2 : ShapeBase
     {
         public override string ShapeType { get { return "triangle"; } }
         public override decimal Area { get { return (decimal)15; } }
-        public override string Color { get { return "green"; } }
+        public override string Color { get { return "yellow"; } }
+    }
+
+    public class Circle : ShapeBase
+    {
+        public override string ShapeType { get { return "circle"; } }
+        public override decimal Area { get { return (decimal)28.27; } }
+        public override string Color { get { return "blue"; } }
     }
 
     public class Rectangle : ShapeBase
@@ -41,4 +34,13 @@ namespace Shapes.ShapeCoreSpecs
         public override decimal Area { get { return (decimal)50; } }
         public override string Color { get { return "purple"; } }
     }
+
+    public class Square : ShapeBase
+    {
+        public override string ShapeType { get { return "square"; } }
+        public override decimal Area { get { return (decimal)64; } }
+        public override string Color { get { return "purple"; } }
+    }
+
+
 }

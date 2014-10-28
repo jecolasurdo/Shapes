@@ -23,11 +23,11 @@ namespace Shapes.ShapeCoreSpecs
             var r = new Rectangle();
             var shapeList = new List<ShapeBase>();
             
-            shapeList.AddRange(new ShapeBase[] {t1, s, c, t2, r});
+            shapeList.AddRange(new ShapeBase[] {s, t1, c, t2, r});
             shapeList.Sort();
 
             var actualResult = shapeList;
-            var expectedResult = new ShapeBase[] {t2, t1, c, r, s};
+            var expectedResult = new ShapeBase[] {t1, t2, c, r, s};
             Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
         }
     }

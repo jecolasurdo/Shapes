@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,15 @@ namespace Shapes.ShapeCore.ComponentModel
     public abstract class ShapeBase : IShape
     {
         public int CompareTo(IShape other) {
-            throw new NotImplementedException();
+            if (Area == other.Area)
+            {
+                return new CaseInsensitiveComparer().Compare(Color, other.Color);
+            }
+            if (Area > other.Area)
+            {
+                return 1;
+            }
+            return -1;
         }
 
         public abstract string ShapeType { get; }
