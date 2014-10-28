@@ -50,16 +50,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ComponentModelSpecs\ShapeBaseSpecs.cs" />
-    <Compile Include="TestShapes\Circle.cs" />
-    <Compile Include="TestShapes\Rectangle.cs" />
-    <Compile Include="TestShapes\Square.cs" />
-    <Compile Include="TestShapes\Triangle1.cs" />
+    <Compile Include="TestShapes\TestCircle.cs" />
+    <Compile Include="TestShapes\TestRectangle.cs" />
+    <Compile Include="TestShapes\TestSquare.cs" />
+    <Compile Include="TestShapes\TestTriangle1.cs" />
     <Compile Include="ShapeLogicSpecs\CircleSpecs.cs" />
     <Compile Include="ShapeLogicSpecs\RectangleSpecs.cs" />
     <Compile Include="ShapeLogicSpecs\ShapeListSpecs.cs" />
     <Compile Include="ShapeLogicSpecs\SquareSpecs.cs" />
     <Compile Include="ShapeLogicSpecs\TriangleSpecs.cs" />
-    <Compile Include="TestShapes\Triangle2.cs" />
+    <Compile Include="TestShapes\TestTriangle2.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShapeCore\ShapeCore.csproj">

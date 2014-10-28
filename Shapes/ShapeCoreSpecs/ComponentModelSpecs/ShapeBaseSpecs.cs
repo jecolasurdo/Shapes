@@ -12,11 +12,11 @@ namespace Shapes.ShapeCoreSpecs.ComponentModelSpecs
     {
         [Test]
         public void ShapeBase_Comparer_SortsFirstByAreaThenByColor() {
-            var t1 = new Triangle1();
-            var s = new Square();
-            var c = new Circle();
-            var t2 = new Triangle2();
-            var r = new Rectangle();
+            var t1 = new TestTriangle1();
+            var s = new TestSquare();
+            var c = new TestCircle();
+            var t2 = new TestTriangle2();
+            var r = new TestRectangle();
             var shapeList = new List<ShapeBase>();
             
             shapeList.AddRange(new ShapeBase[] {s, t1, c, t2, r});

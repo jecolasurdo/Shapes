@@ -2,7 +2,7 @@ using Shapes.ShapeCore.ComponentModel;
 
 namespace Shapes.ShapeCoreSpecs.TestShapes
 {
-    public class Triangle2 : ShapeBase
+    public class TestTriangle2 : ShapeBase
     {
         public override string ShapeType { get { return "triangle"; } }
         public override decimal Area { get { return (decimal)15; } }

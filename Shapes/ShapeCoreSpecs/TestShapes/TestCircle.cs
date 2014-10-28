@@ -2,7 +2,7 @@ using Shapes.ShapeCore.ComponentModel;
 
 namespace Shapes.ShapeCoreSpecs.TestShapes
 {
-    public class Circle : ShapeBase
+    public class TestCircle : ShapeBase
     {
         public override string ShapeType { get { return "circle"; } }
         public override decimal Area { get { return (decimal)28.27; } }
