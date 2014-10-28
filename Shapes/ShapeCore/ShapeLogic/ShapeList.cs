@@ -24,7 +24,7 @@ namespace Shapes.ShapeCore.ShapeLogic
         /// <summary>
         /// Accepts a string and attempts to fill the list based on the values found within.
         /// </summary>
-        public override void FillFromString() {
+        public override void FillFromString(string stringToFillFrom) {
             throw new NotImplementedException();
         }
 
