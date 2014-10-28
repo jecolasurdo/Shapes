@@ -2,6 +2,7 @@
 using System.Linq;
 using NUnit.Framework;
 using Shapes.ShapeCore.ComponentModel;
+using Shapes.ShapeCoreSpecs.TestShapes;
 
 namespace Shapes.ShapeCoreSpecs.ComponentModelSpecs
 {
