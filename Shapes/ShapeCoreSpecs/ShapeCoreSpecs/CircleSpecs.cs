@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using Shapes.ShapeCore.ShapeLogic;
 
 namespace Shapes.ShapeCoreSpecs.ShapeCoreSpecs
 {
@@ -12,7 +13,13 @@ namespace Shapes.ShapeCoreSpecs.ShapeCoreSpecs
     {
         [Test]
         public void Circle_Normally_CalculatesAreaCorrectly() {
-            Assert.Inconclusive();
+            var radius = 3;
+            var circle = new Circle(radius);
+
+            var actualResult = circle.Area;
+            var expectedResult = Math.PI*Math.Pow(3, 2);
+
+            Assert.AreEqual(actualResult,expectedResult);
         }
 
         [Test]
