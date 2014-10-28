@@ -28,10 +28,8 @@ namespace Shapes.ShapeCore.ShapeLogic
         /// </summary>
         public override void FillFromString(string stringToFillFrom) {
             var lines = stringToFillFrom.Split(new char[] {'\n'}, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var line in lines)
+            foreach (var trimmedArgs in lines.Select(line => line.Split(',')).Select(TrimArgs))
             {
-                var args = line.Split(',');
-                var trimmedArgs = TrimArgs(args);
                 switch (trimmedArgs[0])
                 {
                     case "Circle":

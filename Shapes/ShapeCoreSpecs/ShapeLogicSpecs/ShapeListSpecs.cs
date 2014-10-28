@@ -59,5 +59,22 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
         public void FillFromString_ListIsInitiallyFilled_ReplacesExistingValuesWithNew() {
             Assert.Inconclusive();
         }
+
+        [Test]
+        public void GetSubListOfType_Normally_ReturnsTheExpectedSubList() {
+            var c = new Circle(3, "Blue");
+            var r1 = new Rectangle(10, 5, "Purple");
+            var s = new Square(8, "Purple");
+            var t = new Triangle(5, 6, "Green");
+            var r2 = new Rectangle(10, 5, "Orange");
+            var shapeList = new ShapeList();
+            shapeList.AddRange(new ShapeBase[] { c, r1, s, t, r2 });
+
+            var expectedResult = new ShapeList();
+            expectedResult.AddRange(new ShapeBase[] { r1, r2 });
+            var actualResult = (ShapeList)shapeList.GetSubListOfType("Rectangle");
+
+            Assert.IsTrue(actualResult.SequenceEqual(expectedResult));
+        }
     }
 }
