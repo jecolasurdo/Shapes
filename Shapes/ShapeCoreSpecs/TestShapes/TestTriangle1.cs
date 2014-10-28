@@ -4,8 +4,8 @@ namespace Shapes.ShapeCoreSpecs.TestShapes
 {
     public class TestTriangle1 : ShapeBase
     {
-        public override string ShapeType { get { return "triangle"; } }
+        public override string ShapeType { get { return "Triangle"; } }
         public override decimal Area { get { return (decimal)15; } }
-        public override string Color { get { return "green"; } set { throw new System.NotImplementedException(); } }
+        public override string Color { get { return "Green"; } set { throw new System.NotImplementedException(); } }
     }
 }
