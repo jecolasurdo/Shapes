@@ -44,3 +44,24 @@ Sample output for triangles:
 triangle, 15.00, green
 triangle, 15.00, yellow
 ```
+
+Some Notes From The Development Process
+=======================================
+
+Notes:
+
+The comparer test is fairly opaque. It would be best to refactor this into a set of tests that more discretely test the comparer, but I chose this route for brevity.
+
+The comparer does a case insensitive comparison of color names. This seemed like a reasonable design decision since colors are generally the same regardless of how we case them.
+
+Generally converted doubles to decimals wherever possible to avoid floating point math (didn't think this program warranted the addition of epsilon comparisons, though that could be done.).
+
+Generally decided against testing for empty colors and negative dimension lengths. These don't necessarily harm the application but are edge cases that could be added as specs later if desired.
+
+There probably could have been some sort of inheritance relationship between rectangle and square, or between square and circle - rectangle and triangle.
+
+The tests for some properties of each of the discrete shape classes is very repetative, which smells bad to me. It would be good to refactor things so that the tests could be written with much less repetition between each shape type.
+
+The FillFromString method makes fairly ugly use of a switch. This isn't very extensible and might be a bit too procedural. If adding shape types to the API was a common occurance, I would refactor this to avoid the switch statement.
+
+As it stands now the ShapeList class does not implicitly sort the shapes. The calling program must currently make a call to the ShapeList.Sort() method for the list to be sorted, but this works as specified.
