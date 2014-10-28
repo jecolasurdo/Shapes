@@ -52,7 +52,12 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
 
         [Test]
         public void FillFromString_StringIsMalformed_ThrowsAnInvalidArgumentException() {
-            Assert.Inconclusive();
+            var malFormedString = "Circle, t, Blue\n" +
+                                 "Rectangle, 10, 5, Purple\n" +
+                                 "Square, 8, Purple\n" +
+                                 "Triangle, 5, 6, Green\n";
+            var shapeList = new ShapeList();
+            Assert.Throws<ArgumentException>(() => shapeList.FillFromString(malFormedString));
         }
 
         [Test]
