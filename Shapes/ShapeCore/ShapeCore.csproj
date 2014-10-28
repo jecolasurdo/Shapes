@@ -48,6 +48,7 @@
     <Compile Include="ShapeLogic\Circle.cs" />
     <Compile Include="ShapeLogic\Rectangle.cs" />
     <Compile Include="ShapeLogic\Square.cs" />
+    <Compile Include="ShapeLogic\Triangle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
