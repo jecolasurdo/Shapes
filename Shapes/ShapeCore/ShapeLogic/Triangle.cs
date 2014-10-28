@@ -9,14 +9,16 @@ namespace Shapes.ShapeCore.ShapeLogic
 {
     public class Triangle : ShapeBase
     {
-        public override string ShapeType { get { throw new NotImplementedException(); } }
-        public override decimal Area { get { throw new NotImplementedException(); } }
-        public override string Color { get; set; }
+        public override string ShapeType { get { return "Triangle"; } }
+        public override decimal Area { get { return BaseLength * Height / 2; } }
+        public override sealed string Color { get; set; }
         public decimal BaseLength { get; private set; }
         public decimal Height { get; private set; }
 
         public Triangle(decimal baseLength, decimal height, string color) {
-            throw new NotImplementedException();
+            BaseLength = baseLength;
+            Height = height;
+            Color = color;
         }
     }
 }
