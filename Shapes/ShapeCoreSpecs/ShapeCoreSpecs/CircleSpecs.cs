@@ -24,7 +24,13 @@ namespace Shapes.ShapeCoreSpecs.ShapeCoreSpecs
 
         [Test]
         public void Circle_ShapeName_IsCircle() {
-            Assert.Inconclusive();
+            var aValueThatDoesntMatter = 3;
+            var circle = new Circle(aValueThatDoesntMatter);
+
+            var actualResult = circle.ShapeType;
+            var expectedResult = "Circle";
+
+            Assert.AreEqual(actualResult,expectedResult);
         }
 
         [Test]
