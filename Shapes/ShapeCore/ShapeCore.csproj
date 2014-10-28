@@ -45,6 +45,7 @@
     <Compile Include="ComponentModel\IShape.cs" />
     <Compile Include="ComponentModel\ShapeBase.cs" />
     <Compile Include="ComponentModel\IShapeList.cs" />
+    <Compile Include="ComponentModel\ShapeListBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShapeLogic\Circle.cs" />
     <Compile Include="ShapeLogic\Rectangle.cs" />
