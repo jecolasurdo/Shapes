@@ -23,13 +23,12 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
             shapeList.AddRange(new ShapeBase[] {c,r,s,t});
 
             var actualResult = shapeList.ToString();
-            var expectedResult = "Circle, Blue, 28.27\n" +
-                                 "Rectangle, Purple, 50.00\n" +
-                                 "Square, Purple, 64.00\n" +
-                                 "Triangle, Green, 15.00";
+            var expectedResult = "Circle, 28.27, Blue\n" +
+                                 "Rectangle, 50.00, Purple\n" +
+                                 "Square, 64.00, Purple\n" +
+                                 "Triangle, 15.00, Green\n";
 
             Assert.AreEqual(expectedResult,actualResult);
-
         }
     }
 }

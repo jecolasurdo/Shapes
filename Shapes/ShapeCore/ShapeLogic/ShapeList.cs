@@ -13,7 +13,12 @@ namespace Shapes.ShapeCore.ShapeLogic
         /// Exports the current list in a string with each item separated by line breaks.
         /// </summary>
         public override string ToString() {
-            throw new NotImplementedException();
+            var output = string.Empty;
+            foreach (var shape in this)
+            {
+                output += string.Format("{0}, {1}, {2}\n", shape.ShapeType, shape.Area.ToString("F2"), shape.Color);
+            }
+            return output;
         }
 
         /// <summary>
