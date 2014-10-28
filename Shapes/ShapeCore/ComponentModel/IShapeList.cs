@@ -10,7 +10,7 @@ namespace Shapes.ShapeCore.ComponentModel
     public interface IShapeList
     {
         string ToString();
-        void FillFromString();
+        void FillFromString(string stringToFillFrom);
         IShapeList GetSubListOfType(string shapeName);
     }
 }

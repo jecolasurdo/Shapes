@@ -24,5 +24,8 @@ namespace Shapes.ShapeCore.ComponentModel
         public abstract string ShapeType { get; }
         public abstract decimal Area { get; }
         public abstract string Color { get; set; }
+        public bool Equals(IShape other) {
+            return (ShapeType == other.ShapeType && Area == other.Area && Color == other.Color);
+        }
     }
 }

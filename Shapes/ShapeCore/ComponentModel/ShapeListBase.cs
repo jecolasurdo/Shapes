@@ -9,7 +9,7 @@ namespace Shapes.ShapeCore.ComponentModel
     public abstract class ShapeListBase : List<IShape>, IShapeList
     {
         public new abstract string ToString();
-        public abstract void FillFromString();
+        public abstract void FillFromString(string stringToFillFrom);
         public abstract IShapeList GetSubListOfType(string shapeName);
     }
 }

@@ -33,17 +33,17 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
 
         [Test]
         public void FillFromString_Normally_FillsTheListFromAString() {
-            var c = new TestCircle();
-            var r = new TestRectangle();
-            var s = new TestSquare();
-            var t = new TestTriangle1();
+            var c = new Circle(3,"Blue");
+            var r = new Rectangle(10,5,"Purple");
+            var s = new Square(8,"Purple");
+            var t = new Triangle(5,6,"Green");
             var expectedShapeList = new ShapeList();
             expectedShapeList.AddRange(new ShapeBase[] { c, r, s, t });
 
-            var stringToFillFrom = "Circle, 28.27, Blue\n" +
-                                 "Rectangle, 50.00, Purple\n" +
-                                 "Square, 64.00, Purple\n" +
-                                 "Triangle, 15.00, Green\n";
+            var stringToFillFrom = "Circle, 3, Blue\n" +
+                                 "Rectangle, 10, 5, Purple\n" +
+                                 "Square, 8, Purple\n" +
+                                 "Triangle, 5, 6, Green\n";
             var actualShapeList = new ShapeList();
             actualShapeList.FillFromString(stringToFillFrom);
 

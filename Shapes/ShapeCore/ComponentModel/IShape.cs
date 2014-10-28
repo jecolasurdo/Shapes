@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes.ShapeCore.ComponentModel
 {
-    public interface IShape : IComparable<IShape>
+    public interface IShape : IComparable<IShape>, IEquatable<IShape>
     {
         string ShapeType { get; }
         decimal Area { get; }
