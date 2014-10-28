@@ -30,5 +30,20 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
 
             Assert.AreEqual(expectedResult,actualResult);
         }
+
+        [Test]
+        public void FillFromString_Normally_FillsTheListFromAString() {
+            Assert.Inconclusive();
+        }
+
+        [Test]
+        public void FillFromString_StringIsMalformed_ThrowsAnInvalidArgumentException() {
+            Assert.Inconclusive();
+        }
+
+        [Test]
+        public void FillFromString_ListIsInitiallyFilled_ReplacesExistingValuesWithNew() {
+            Assert.Inconclusive();
+        }
     }
 }
