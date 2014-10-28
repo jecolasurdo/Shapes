@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="ComponentModel\ICircle.cs" />
     <Compile Include="ComponentModel\IShape.cs" />
-    <Compile Include="ComponentModel\ShapeBase.cs" />
+    <Compile Include="ComponentModel\ShapeComparer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShapeLogic\Circle.cs" />
   </ItemGroup>

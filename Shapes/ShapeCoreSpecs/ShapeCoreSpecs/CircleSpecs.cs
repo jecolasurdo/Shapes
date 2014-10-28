@@ -17,7 +17,7 @@ namespace Shapes.ShapeCoreSpecs.ShapeCoreSpecs
             var circle = new Circle(radius);
 
             var actualResult = circle.Area;
-            var expectedResult = Math.PI*Math.Pow(3, 2);
+            var expectedResult = (decimal) Math.PI*3*3;
 
             Assert.AreEqual(actualResult,expectedResult);
         }
