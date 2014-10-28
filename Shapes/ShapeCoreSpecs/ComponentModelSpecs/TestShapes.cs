@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Shapes.ShapeCore.ComponentModel;
+﻿using Shapes.ShapeCore.ComponentModel;
 
-namespace Shapes.ShapeCoreSpecs
+namespace Shapes.ShapeCoreSpecs.ComponentModelSpecs
 {
     public class Triangle1 : ShapeBase
     {

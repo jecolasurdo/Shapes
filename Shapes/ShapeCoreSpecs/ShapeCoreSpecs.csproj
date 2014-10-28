@@ -49,8 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShapeBaseSpecs.cs" />
-    <Compile Include="TestShapes.cs" />
+    <Compile Include="ComponentModelSpecs\ShapeBaseSpecs.cs" />
+    <Compile Include="ComponentModelSpecs\TestShapes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShapeCore\ShapeCore.csproj">
@@ -58,6 +58,7 @@
       <Name>ShapeCore</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

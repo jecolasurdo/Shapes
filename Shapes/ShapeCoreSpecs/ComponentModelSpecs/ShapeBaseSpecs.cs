@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NSubstitute.Core;
 using NUnit.Framework;
 using Shapes.ShapeCore.ComponentModel;
 
-namespace Shapes.ShapeCoreSpecs
+namespace Shapes.ShapeCoreSpecs.ComponentModelSpecs
 {
 
     [TestFixture]
