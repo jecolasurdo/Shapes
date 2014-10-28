@@ -62,7 +62,20 @@ namespace Shapes.ShapeCoreSpecs.ShapeLogicSpecs
 
         [Test]
         public void FillFromString_ListIsInitiallyFilled_ReplacesExistingValuesWithNew() {
-            Assert.Inconclusive();
+            var c = new Circle(3, "Blue");
+            var r = new Rectangle(10, 5, "Purple");
+            var s = new Square(8, "Purple");
+            var t = new Triangle(5, 6, "Green");
+            var shapeList = new ShapeList();
+            shapeList.AddRange(new ShapeBase[] { c, r, s, t });
+
+            var expectedShapeList = new ShapeList();
+            expectedShapeList.Add(new Square(7,"Turnip"));
+            var stringToFillFrom = "Square, 7, Turnip\n";
+            shapeList.FillFromString(stringToFillFrom);
+            var actualShapeList = shapeList;
+
+            Assert.IsTrue(actualShapeList.SequenceEqual(expectedShapeList));
         }
 
         [Test]

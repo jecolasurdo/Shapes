@@ -27,6 +27,7 @@ namespace Shapes.ShapeCore.ShapeLogic
         /// Accepts a string and attempts to fill the list based on the values found within.
         /// </summary>
         public override void FillFromString(string stringToFillFrom) {
+            Clear();
             var lines = stringToFillFrom.Split(new char[] {'\n'}, StringSplitOptions.RemoveEmptyEntries);
             foreach (var trimmedArgs in lines.Select(line => line.Split(',')).Select(TrimArgs))
             {
