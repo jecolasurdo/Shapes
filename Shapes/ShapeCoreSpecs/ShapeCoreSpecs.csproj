@@ -54,6 +54,7 @@
     <Compile Include="ShapeCoreSpecs\CircleSpecs.cs" />
     <Compile Include="ShapeCoreSpecs\RectangleSpecs.cs" />
     <Compile Include="ShapeCoreSpecs\SquareSpecs.cs" />
+    <Compile Include="ShapeCoreSpecs\TriangleSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShapeCore\ShapeCore.csproj">
