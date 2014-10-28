@@ -14,7 +14,7 @@ namespace Shapes.ShapeCore.ShapeLogic
         public override string Color { get; set; }
         public decimal Length { get; private set; }
 
-        public Square(decimal length) {
+        public Square(decimal length, string color) {
             throw new NotImplementedException();
         }
     }

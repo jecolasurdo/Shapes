@@ -53,6 +53,7 @@
     <Compile Include="ComponentModelSpecs\TestShapes.cs" />
     <Compile Include="ShapeCoreSpecs\CircleSpecs.cs" />
     <Compile Include="ShapeCoreSpecs\RectangleSpecs.cs" />
+    <Compile Include="ShapeCoreSpecs\SquareSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShapeCore\ShapeCore.csproj">
